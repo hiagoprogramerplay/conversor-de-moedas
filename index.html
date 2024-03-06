@@ -8,16 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <main>
         <strong><h1>CONVERSOR DE MOEDAS</h1></strong>
-    </header>
-    <Section>
-        <form action="cad.php" method="get"></form>
-        <label for="coverter">DIGITE QUANTO QUER COVERTER:</label>
-        <input type="text" name = converter id="idconverter">
-    </Section>
-    
-    
-    
+        <form action="conversao_php" method="get">
+            <label for="din" >Quantos R$ você gostaria de converter?</label>
+            <input type="number" name="din" id="din" stop="0.01">
+            <input type="submit" value="Converter">
+        </form>
+    </main>  
 </body>
 </html>
